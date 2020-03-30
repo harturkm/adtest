@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tests" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etw-09-h4l">
+                                <rect key="frame" x="0.0" y="429" width="414" height="50"/>
+                                <state key="normal" title="Show New Window"/>
+                                <connections>
+                                    <action selector="showNewWindow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DZL-qS-wQW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSN-0d-wlX">
+                                <rect key="frame" x="0.0" y="732" width="414" height="30"/>
+                                <state key="normal" title="Show Ad"/>
+                                <connections>
+                                    <action selector="showAd" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gr3-jp-y5D"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cSN-0d-wlX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="05L-Ux-1rM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cSN-0d-wlX" secondAttribute="bottom" constant="100" id="5zN-dC-j1v"/>
+                            <constraint firstItem="cSN-0d-wlX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HeN-1Q-a3b"/>
+                            <constraint firstItem="etw-09-h4l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Kjb-Ui-g3E"/>
+                            <constraint firstItem="etw-09-h4l" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0334821" constant="20" id="RvC-HY-bZT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cSN-0d-wlX" secondAttribute="trailing" id="jmA-Cf-fVF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="etw-09-h4l" secondAttribute="trailing" id="sx6-If-So1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="actualEdge" destination="etw-09-h4l" id="XXf-Ah-NvA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
